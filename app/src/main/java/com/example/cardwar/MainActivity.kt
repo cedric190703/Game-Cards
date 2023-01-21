@@ -223,7 +223,7 @@ class MainActivity : AppCompatActivity() {
         vP1.visibility = View.INVISIBLE
         restartButton.visibility = View.INVISIBLE
         card1P1.visibility = View.VISIBLE
-        card2P1.visibility = View.VISIBLE
+        card2P2.visibility = View.VISIBLE
         card3P1.visibility = View.VISIBLE
         card1P2.visibility = View.VISIBLE
         card2P2.visibility = View.VISIBLE
