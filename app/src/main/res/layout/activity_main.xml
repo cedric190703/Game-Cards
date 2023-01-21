@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lay_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="289dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_card1"
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="10dp"
+            android:src="@drawable/black_joker">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_card2"
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="10dp"
+            android:src="@drawable/black_joker">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_card3"
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="10dp"
+            android:src="@drawable/black_joker">
+        </ImageView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deal"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="161dp"
+        android:layout_height="76dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:fontFamily="sans-serif"
+        android:text="Deal"
+        android:textSize="24sp"
+        android:textStyle="bold">
+    </Button>
+
+    <Button
+        android:id="@+id/restart"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="161dp"
+        android:layout_height="76dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:fontFamily="sans-serif"
+        android:text="Restart the game"
+        android:textSize="24sp"
+        android:textStyle="bold">
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/lay_cards2"
+        android:layout_width="wrap_content"
+        android:layout_height="289dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp">
+        <ImageView
+            android:id="@+id/iv_card1_2"
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="10dp"
+            android:src="@drawable/black_joker">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_card2_2"
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="10dp"
+            android:src="@drawable/black_joker">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_card3_2"
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="10dp"
+            android:src="@drawable/black_joker">
+        </ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1 : 0 points"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2 : 0 points"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Teal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It's a teal !!"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp"
+        android:layout_below="@id/lay_cards"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/victoryP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1 have won the game"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp"
+        android:layout_below="@id/lay_cards"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/victoryP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2 have won the game"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp"
+        android:layout_below="@id/lay_cards"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp">
+    </TextView>
+</RelativeLayout>
